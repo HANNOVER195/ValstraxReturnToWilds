@@ -1,10 +1,30 @@
 {
-  "mod_elements": [],
+  "mod_elements": [
+    {
+      "name": "PepitoPiernasCortas",
+      "type": "animatedentity",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "pepito_piernas_cortas",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/monsterhuntercraft/client/renderer/PepitoPiernasCortasRenderer.java",
+          "src/main/resources/assets/monster_hunter_craft/models/item/pepito_piernas_cortas_spawn_egg.json",
+          "src/main/java/net/mcreator/monsterhuntercraft/entity/PepitoPiernasCortasEntity.java",
+          "src/main/resources/data/monster_hunter_craft/forge/biome_modifier/pepito_piernas_cortas_biome_modifier.json",
+          "src/main/java/net/mcreator/monsterhuntercraft/entity/model/PepitoPiernasCortasModel.java"
+        ]
+      }
+    }
+  ],
   "variable_elements": [],
   "sound_elements": [],
   "tag_elements": {},
   "language_map": {
-    "en_us": {}
+    "en_us": {
+      "item.monster_hunter_craft.pepito_piernas_cortas_spawn_egg": "Pepito Piernas Cortas Spawn Egg",
+      "entity.monster_hunter_craft.pepito_piernas_cortas": "Pepito Piernas Cortas"
+    }
   },
   "foldersRoot": {
     "name": "~",

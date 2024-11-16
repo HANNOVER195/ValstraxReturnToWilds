@@ -17,6 +17,10 @@ import net.minecraftforge.common.MinecraftForge;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.network.FriendlyByteBuf;
 
+import net.mcreator.monsterhuntercraft.init.MonsterHunterCraftModTabs;
+import net.mcreator.monsterhuntercraft.init.MonsterHunterCraftModItems;
+import net.mcreator.monsterhuntercraft.init.MonsterHunterCraftModEntities;
+
 import java.util.function.Supplier;
 import java.util.function.Function;
 import java.util.function.BiConsumer;
@@ -36,6 +40,11 @@ public class MonsterHunterCraftMod {
 		// End of user code block mod constructor
 		MinecraftForge.EVENT_BUS.register(this);
 		IEventBus bus = FMLJavaModLoadingContext.get().getModEventBus();
+
+		MonsterHunterCraftModItems.REGISTRY.register(bus);
+		MonsterHunterCraftModEntities.REGISTRY.register(bus);
+
+		MonsterHunterCraftModTabs.REGISTRY.register(bus);
 
 		// Start of user code block mod init
 		// End of user code block mod init
